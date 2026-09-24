@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hari Krishna P K — Digital Marketing Executive & Freelance Marketer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Anton&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#08090B; --card:#15171B; --card-2:#1B1E23;
+    --line: rgba(255,255,255,0.08);
+    --text:#F4F5F7; --dim: rgba(244,245,247,0.62); --dimmer: rgba(244,245,247,0.4);
+    --cyan:#D7EF3B; --cyan-2:#A9DA2B;
+    box-sizing:border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *{ box-sizing:inherit; }
+  html{ scroll-behavior:smooth; scroll-padding-top: 90px; }
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:'Plus Jakarta Sans', -apple-system, sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  a{ color:inherit; } img{ max-width:100%; }
+  h1,h2,h3{ margin:0; font-weight:800; letter-spacing:-0.02em; }
+  .wrap{ max-width:1100px; margin:0 auto; padding:0 28px; }
+  section{ padding:100px 0; }
+  .eyebrow{ font-size:12.5px; font-weight:700; color:var(--cyan-2); letter-spacing:0.06em; }
+
+  .progress{ position:fixed; top:0; left:0; height:3px; background:linear-gradient(90deg,var(--cyan),var(--cyan-2)); width:0%; z-index:60; }
+
+
+
+  .hero{ position:relative; padding:120px 0 60px; text-align:center; overflow:hidden; }
+  .hero .wrap{ position:relative; z-index:1; }
+  .badge{ display:inline-flex; align-items:center; gap:8px; font-size:13px; color:var(--dim); border:1px solid var(--line); padding:7px 16px; border-radius:30px; margin-bottom:28px; }
+  .badge .dot{ width:6px; height:6px; border-radius:50%; background:var(--cyan-2); }
+  .hero h1{ font-family:'Anton', 'Plus Jakarta Sans', sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:0.01em; font-size:clamp(40px,7.5vw,76px); line-height:1.02; max-width:17ch; margin:0 auto; }
+  .hero .role{ color:var(--cyan-2); font-weight:700; font-size:clamp(16px,2.2vw,19px); margin-top:16px; }
+  .hero .stack{ color:var(--dim); font-size:14px; margin-top:8px; }
+  .hero p.sub{ color:var(--dim); font-size:16.5px; max-width:50ch; margin:20px auto 0; }
+  .hero-actions{ display:flex; justify-content:center; gap:14px; margin-top:32px; flex-wrap:wrap; }
+  .btn{ display:inline-flex; align-items:center; gap:8px; padding:13px 24px; border-radius:30px; font-size:14.5px; font-weight:600; text-decoration:none; border:1px solid var(--line); }
+  .btn.primary{ background:linear-gradient(135deg,var(--cyan),var(--cyan-2)); color:#15180A; border:none; }
+  .btn.ghost{ color:var(--text); }
+  .btn.ghost:hover{ border-color:var(--cyan); color:var(--cyan-2); }
+  .icon svg{ width:18px; height:18px; }
+  .glow{ position:absolute; left:50%; bottom:-140px; transform:translateX(-50%); width:900px; height:280px; background:radial-gradient(ellipse at center, rgba(215,239,59,0.35), rgba(169,218,43,0.18) 45%, transparent 72%); filter:blur(40px); z-index:0; }
+  .brand-marquee{ position:absolute; top:50%; left:0; width:100%; transform:translateY(-50%); overflow:hidden; z-index:-1; pointer-events:none; }
+  .brand-track{ display:flex; align-items:center; gap:70px; width:max-content; animation: marquee-rtl 20s linear infinite; }
+  .brand-chip{ font-size:clamp(52px,10vw,110px); font-weight:800; letter-spacing:-0.01em; white-space:nowrap; color:var(--cyan); opacity:0.5; }
+  .brand-chip:nth-child(3n+2){ color:var(--cyan-2); }
+  .brand-chip:nth-child(3n){ -webkit-text-stroke:2px var(--cyan); color:transparent; opacity:0.4; }
+  @keyframes marquee-rtl{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce){ .brand-track{ animation:none; } }
+  .mock{ position:relative; z-index:1; max-width:420px; margin:56px auto 0; background:linear-gradient(160deg,var(--card),var(--card-2)); border:1px solid var(--line); border-radius:22px; padding:26px; text-align:left; box-shadow:0 30px 60px rgba(0,0,0,0.5); transform:rotate(-2deg); }
+  .mock-top{ display:flex; justify-content:space-between; font-size:13px; color:var(--dim); }
+  .mock-score{ font-size:26px; font-weight:800; margin-top:10px; }
+  .mock-row{ display:flex; align-items:center; gap:12px; margin-top:14px; }
+  .mock-row .lbl{ width:92px; font-size:12.5px; color:var(--dim); flex-shrink:0; }
+  .mock-bar{ flex:1; height:6px; border-radius:6px; background:rgba(255,255,255,0.08); overflow:hidden; }
+  .mock-bar span{ display:block; height:100%; border-radius:6px; background:linear-gradient(90deg,var(--cyan),var(--cyan-2)); }
+
+  .head{ text-align:center; max-width:60ch; margin:0 auto 48px; }
+  .head h2{ font-size:clamp(26px,3.8vw,38px); margin-top:8px; }
+  .head p{ color:var(--dim); margin-top:14px; font-size:15.5px; }
+
+  .request-card{ display:grid; grid-template-columns:1fr 1.3fr; border-radius:28px; overflow:hidden; border:1px solid var(--line); }
+  .request-left{ background:linear-gradient(165deg,#181B20,#0A0B0C); padding:56px 46px; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:center; }
+  .req-icon{ width:74px; height:74px; border-radius:20px; background:rgba(255,255,255,0.05); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:var(--cyan-2); position:relative; z-index:1; }
+  .req-icon svg{ width:32px; height:32px; }
+  .request-left h2{ color:#fff; font-size:clamp(26px,3.6vw,36px); margin-top:26px; position:relative; z-index:1; }
+  .request-left p{ color:var(--dim); font-size:14.5px; max-width:32ch; margin-top:12px; position:relative; z-index:1; }
+  .req-quick{ display:flex; gap:10px; margin-top:28px; position:relative; z-index:1; }
+  .req-glow{ position:absolute; left:-8%; bottom:-30%; width:320px; height:320px; background:radial-gradient(circle, rgba(215,239,59,0.4), transparent 70%); filter:blur(46px); z-index:0; }
+
+  .request-right{ background:#F4F5F1; padding:48px 46px; }
+  .request-right label{ display:block; font-size:12px; font-weight:700; color:#4A4D45; margin-bottom:7px; }
+  .field{ margin-bottom:18px; }
+  .request-right input, .request-right textarea{ width:100%; background:#E9EBE4; border:1px solid #DDE0D6; border-radius:10px; padding:13px 15px; font-family:inherit; font-size:14.5px; color:#14170F; }
+  .request-right input::placeholder, .request-right textarea::placeholder{ color:#8A8D82; }
+  .request-right textarea{ min-height:96px; resize:vertical; }
+  .request-right input:focus, .request-right textarea:focus{ outline:none; border-color:var(--cyan-2); }
+  .req-submit{ width:100%; border:none; cursor:pointer; border-radius:12px; padding:15px; font-weight:700; font-size:15px; background:linear-gradient(90deg,var(--cyan),var(--cyan-2)); color:#15180A; }
+
+  @media (max-width:820px){
+    .request-card{ grid-template-columns:1fr; }
+    .request-left, .request-right{ padding:38px 26px; }
+  }
+
+  .about-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:40px; align-items:start; }
+  .about-grid p{ color:var(--dim); font-size:15.5px; margin:0 0 14px; }
+  .stat-card{ background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px; margin-bottom:14px; }
+  .stat-card .n{ font-size:26px; font-weight:800; color:var(--cyan-2); }
+  .stat-card .l{ font-size:13px; color:var(--dim); margin-top:4px; }
+
+  .grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:20px; padding:26px; }
+  .card-icon{ width:64px; height:64px; border-radius:16px; background:rgba(215,239,59,0.1); color:var(--cyan-2); display:inline-flex; align-items:center; justify-content:center; margin-bottom:14px; }
+  .card-icon svg{ width:32px; height:32px; }
+  .card h3{ font-size:16px; font-weight:700; }
+  .card p{ color:var(--dim); font-size:13.5px; margin-top:6px; }
+
+  .port-card{ background:var(--card); border:1px solid var(--line); border-radius:20px; overflow:hidden; }
+  .port-thumb{ height:168px; background:linear-gradient(135deg, rgba(215,239,59,0.22), rgba(169,218,43,0.1)); display:flex; align-items:center; justify-content:center; color:var(--cyan-2); overflow:hidden; }
+  .port-thumb svg{ width:100%; height:100%; transform:scale(1.55); }
+  .port-body{ padding:22px; }
+  .port-body .tag{ display:inline-block; font-size:11.5px; font-weight:700; color:var(--cyan-2); background:rgba(215,239,59,0.1); padding:4px 10px; border-radius:20px; margin-bottom:10px; }
+  .port-body h3{ font-size:16px; }
+  .port-body p{ color:var(--dim); font-size:13.5px; margin-top:6px; }
+  .port-note{ text-align:center; color:var(--dimmer); font-size:13.5px; margin-top:32px; }
+
+  .timeline{ display:grid; gap:16px; }
+  .tl{ display:grid; grid-template-columns:26px 1fr; gap:20px; }
+  .tl-dotcol{ display:flex; flex-direction:column; align-items:center; }
+  .tl-dot{ width:12px; height:12px; border-radius:50%; background:var(--cyan-2); margin-top:8px; }
+  .tl-line{ flex:1; width:1px; background:var(--line); margin-top:6px; }
+  .tl-card{ background:var(--card); border:1px solid var(--line); border-radius:20px; padding:26px; margin-bottom:6px; }
+  .tl-top{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; align-items:baseline; }
+  .tl-top h3{ font-size:18px; }
+  .tl-top .when{ font-size:12.5px; font-weight:700; color:var(--cyan-2); background:rgba(215,239,59,0.1); padding:5px 12px; border-radius:20px; }
+  .tl-role{ color:var(--dim); font-size:14px; margin-top:2px; }
+  .tl-card ul{ list-style:none; margin:18px 0 0; padding:0; display:grid; gap:10px; }
+  .tl-card li{ font-size:14.5px; color:var(--dim); padding-left:20px; position:relative; }
+  .tl-card li::before{ content:""; position:absolute; left:0; top:8px; width:6px; height:6px; border-radius:50%; background:var(--cyan-2); }
+
+  .skill-group{ background:var(--card); border:1px solid var(--line); border-radius:20px; padding:26px; }
+  .skill-group h3{ font-size:15px; color:var(--cyan-2); }
+  .skill-group ul{ list-style:none; margin:16px 0 0; padding:0; display:grid; gap:10px; }
+  .skill-group li{ font-size:14.5px; color:var(--dim); padding-top:10px; border-top:1px solid var(--line); }
+  .skill-group li:first-child{ border-top:none; padding-top:0; }
+
+  .free-banner{ background:linear-gradient(160deg, rgba(215,239,59,0.14), var(--card)); border:1px solid rgba(215,239,59,0.3); border-radius:26px; padding:56px; text-align:center; }
+  .free-banner h2{ font-size:clamp(24px,4vw,36px); max-width:20ch; margin:0 auto; }
+  .free-banner p{ color:var(--dim); max-width:52ch; margin:16px auto 0; font-size:15.5px; }
+
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
+  .contact-btns{ display:grid; gap:12px; }
+  .contact-btns a{ display:flex; align-items:center; gap:12px; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 18px; text-decoration:none; font-size:14.5px; font-weight:600; }
+  .contact-btns a:hover{ border-color:var(--cyan); }
+  .contact-btns .icon{ width:36px; height:36px; border-radius:10px; background:rgba(215,239,59,0.1); color:var(--cyan-2); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  form{ display:grid; gap:12px; }
+  form input, form textarea{ width:100%; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:13px 16px; color:var(--text); font-family:inherit; font-size:14.5px; }
+  form textarea{ resize:vertical; min-height:100px; }
+  form input:focus, form textarea:focus{ outline:none; border-color:var(--cyan); }
+  form button{ justify-self:start; border:none; cursor:pointer; }
+
+  footer{ padding:36px 0 110px; border-top:1px solid var(--line); text-align:center; }
+  footer .fname{ font-weight:700; }
+  footer .fmeta{ color:var(--dimmer); font-size:13px; margin-top:8px; }
+  .foot-socials{ display:flex; justify-content:center; gap:10px; margin-top:16px; }
+  .social{ width:38px; height:38px; border-radius:50%; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:var(--text); }
+  .social svg{ width:16px; height:16px; }
+  .social:hover{ border-color:var(--cyan); color:var(--cyan-2); }
+
+  [data-reveal]{ opacity:0; transform:translateY(38px) scale(0.96); filter:blur(6px); transition:opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1), filter .9s cubic-bezier(.16,1,.3,1); }
+  [data-reveal].in{ opacity:1; transform:translateY(0) scale(1); filter:blur(0); }
+  [data-reveal="stagger"] > *{ opacity:0; transform:translateY(30px) scale(0.94); filter:blur(5px); transition:opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1), filter .8s cubic-bezier(.16,1,.3,1); }
+  [data-reveal="stagger"].in > *{ opacity:1; transform:translateY(0) scale(1); filter:blur(0); }
+  [data-reveal="stagger"].in > *:nth-child(1){ transition-delay:.05s; }
+  [data-reveal="stagger"].in > *:nth-child(2){ transition-delay:.13s; }
+  [data-reveal="stagger"].in > *:nth-child(3){ transition-delay:.21s; }
+  [data-reveal="stagger"].in > *:nth-child(4){ transition-delay:.29s; }
+  [data-reveal="stagger"].in > *:nth-child(5){ transition-delay:.37s; }
+  [data-reveal="stagger"].in > *:nth-child(6){ transition-delay:.45s; }
+  [data-reveal="stagger"].in > *:nth-child(7){ transition-delay:.53s; }
+  [data-reveal="stagger"].in > *:nth-child(8){ transition-delay:.61s; }
+  [data-reveal="stagger"].in > *:nth-child(9){ transition-delay:.69s; }
+  .eyebrow[data-reveal]{ transform:translateY(14px); }
+  @media (prefers-reduced-motion: reduce){ [data-reveal], [data-reveal="stagger"] > *{ opacity:1; transform:none; filter:none; transition:none; } }
+
+  @media (max-width:820px){
+    .about-grid, .contact-grid{ grid-template-columns:1fr; }
+    .grid3{ grid-template-columns:1fr 1fr; }
+  }
+  @media (max-width:600px){
+    section{ padding:72px 0; }
+    .grid3{ grid-template-columns:1fr; }
+    .free-banner{ padding:34px 22px; }
+    .tl-card{ padding:20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<section class="hero">
+  <div class="brand-marquee" aria-hidden="true">
+    <div class="brand-track">
+      <span class="brand-chip">Meta Ads</span>
+      <span class="brand-chip">Google Ads</span>
+      <span class="brand-chip">SEO</span>
+      <span class="brand-chip">Meta Ads</span>
+      <span class="brand-chip">Google Ads</span>
+      <span class="brand-chip">SEO</span>
+    </div>
+  </div>
+  <div class="wrap">
+    <h1 data-reveal>Hari Krishna P K</h1>
+    <div class="role" data-reveal>Digital Marketing Executive &amp; Freelance Digital Marketer</div>
+    <div class="stack" data-reveal>SEO · Social Media Marketing · Google Ads · Website Development</div>
+    <p class="sub" data-reveal>Helping businesses grow through SEO, social media, paid advertising and professional websites — with hands-on experience running real client campaigns.</p>
+    <div class="hero-actions" data-reveal>
+      <a class="btn primary" href="#contact">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg></span>
+        Let's Work Together
+      </a>
+      <a class="btn ghost" href="#portfolio">View Portfolio</a>
+      <a class="btn ghost" href="#contact">Contact Now</a>
+    </div>
+    <div class="mock" data-reveal>
+      <div class="mock-top"><span>Focus areas</span><span>2+ yrs experience</span></div>
+      <div class="mock-score">SEO · SMM · Ads · Web</div>
+      <div class="mock-row"><span class="lbl">SEO</span><div class="mock-bar"><span style="width:88%"></span></div></div>
+      <div class="mock-row"><span class="lbl">Paid Ads</span><div class="mock-bar"><span style="width:82%"></span></div></div>
+      <div class="mock-row"><span class="lbl">Social Media</span><div class="mock-bar"><span style="width:85%"></span></div></div>
+      <div class="mock-row"><span class="lbl">Web Dev</span><div class="mock-bar"><span style="width:70%"></span></div></div>
+    </div>
+    <div class="glow"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="head" data-reveal><span class="eyebrow">ABOUT</span><h2>Digital marketer, on the client-facing side</h2></div>
+    <div class="about-grid" data-reveal>
+      <div>
+        <p>I currently work as a <strong>Digital Marketing Executive at Enovexa Solutions</strong>, with 2+ years of hands-on digital marketing experience across SEO, social media, paid advertising and websites.</p>
+        <p>Before this, I trained and worked as a Digital Marketing Intern at Dotcom Creativez, Kochi — running real-time SEO, social media and performance marketing projects, which built the practical foundation I now use with freelance clients.</p>
+        <p>I've handled live client accounts and campaigns directly — from keyword research and content planning to ad setup, analytics reporting and reviewing results with clients — not just theory.</p>
+      </div>
+      <div>
+        <div class="stat-card"><div class="n">2+ yrs</div><div class="l">Digital marketing experience</div></div>
+        <div class="stat-card"><div class="n">2</div><div class="l">Roles: agency internship + current executive role</div></div>
+        <div class="stat-card"><div class="n">4</div><div class="l">Core channels — SEO, SMM, Ads, Web</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head" data-reveal><span class="eyebrow">SERVICES</span><h2>What I can do for your business</h2><p>Freelance digital marketing services, end to end.</p></div>
+    <div class="grid3" data-reveal="stagger">
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <rect x="24" y="80" width="14" height="30" rx="2" fill="#A9DA2B" fill-opacity="0.35"/><rect x="44" y="64" width="14" height="46" rx="2" fill="#A9DA2B" fill-opacity="0.55"/><rect x="64" y="46" width="14" height="64" rx="2" fill="#A9DA2B" fill-opacity="0.75"/><rect x="84" y="30" width="14" height="80" rx="2" fill="#D7EF3B"/>
+        <circle cx="140" cy="56" r="22" fill="#15171B" stroke="#D7EF3B" stroke-width="3"/><line x1="156" y1="72" x2="172" y2="88" stroke="#D7EF3B" stroke-width="4" stroke-linecap="round"/>
+      </svg></div><div class="port-body"><h3>SEO</h3><p>Keyword research, on-page and technical SEO to grow organic visibility.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <rect x="118" y="14" width="56" height="102" rx="12" fill="#15171B" stroke="#A9DA2B" stroke-width="2"/><rect x="124" y="24" width="44" height="74" rx="4" fill="#D7EF3B" fill-opacity="0.08"/><path d="M137 52c0-4 3-7 7-7 2 0 4 1 5 3 1-2 3-3 5-3 4 0 7 3 7 7 0 6-8 12-12 15-4-3-12-9-12-15Z" fill="#D7EF3B"/>
+        <g stroke="#A9DA2B" stroke-width="3" stroke-linecap="round"><line x1="130" y1="88" x2="130" y2="94"/><line x1="138" y1="82" x2="138" y2="94"/><line x1="146" y1="76" x2="146" y2="94"/><line x1="154" y1="70" x2="154" y2="94"/></g>
+        <circle cx="42" cy="46" r="24" fill="#D7EF3B" fill-opacity="0.06"/><circle cx="42" cy="46" r="15" fill="none" stroke="#A9DA2B" stroke-width="2"/><path d="M34 46c0-4.5 3.5-8 8-8s8 3.5 8 8-3.5 8-8 8" fill="none" stroke="#D7EF3B" stroke-width="2" stroke-linecap="round"/>
+      </svg></div><div class="port-body"><h3>Social Media Marketing</h3><p>Page management, content planning and audience growth.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <rect x="18" y="30" width="140" height="26" rx="13" fill="#15171B" stroke="#A9DA2B" stroke-width="1.5"/><rect x="26" y="38" width="24" height="10" rx="4" fill="#D7EF3B"/><line x1="58" y1="43" x2="140" y2="43" stroke="#A9DA2B" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.5"/>
+        <path d="M160 100 176 44 190 96Z" fill="none" stroke="#D7EF3B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M120 92 c14-30 30-46 50-52" stroke="#D7EF3B" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M170 40 178 40 178 48Z" fill="#D7EF3B"/>
+        <circle cx="34" cy="90" r="14" fill="none" stroke="#A9DA2B" stroke-width="2"/><text x="34" y="95" font-size="14" fill="#D7EF3B" text-anchor="middle" font-family="sans-serif" font-weight="700">1</text>
+      </svg></div><div class="port-body"><h3>Google Ads</h3><p>Search campaigns built and optimized for qualified leads.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <circle cx="94" cy="66" r="42" stroke="#A9DA2B" stroke-width="2" stroke-opacity="0.35"/><circle cx="94" cy="66" r="29" stroke="#A9DA2B" stroke-width="2" stroke-opacity="0.6"/><circle cx="94" cy="66" r="16" stroke="#D7EF3B" stroke-width="2"/><circle cx="94" cy="66" r="5" fill="#D7EF3B"/>
+        <path d="M128 96 L152 118 L139 119 L135 132 Z" fill="#D7EF3B"/>
+        <rect x="24" y="18" width="50" height="32" rx="6" fill="#15171B" stroke="#A9DA2B" stroke-width="1.5"/><line x1="32" y1="28" x2="66" y2="28" stroke="#D7EF3B" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.7"/><line x1="32" y1="36" x2="54" y2="36" stroke="#A9DA2B" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.5"/><line x1="32" y1="44" x2="60" y2="44" stroke="#A9DA2B" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.3"/>
+      </svg></div><div class="port-body"><h3>Meta Ads</h3><p>Facebook &amp; Instagram ad campaigns targeted for reach or leads.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <rect x="22" y="16" width="156" height="100" rx="10" fill="#15171B" stroke="#A9DA2B" stroke-width="1.5"/>
+        <rect x="34" y="28" width="36" height="30" rx="5" fill="#D7EF3B" fill-opacity="0.12" stroke="#D7EF3B" stroke-width="1.2"/><line x1="40" y1="38" x2="64" y2="38" stroke="#D7EF3B" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6"/><line x1="40" y1="46" x2="58" y2="46" stroke="#D7EF3B" stroke-width="2" stroke-linecap="round" stroke-opacity="0.4"/>
+        <rect x="78" y="28" width="36" height="30" rx="5" fill="#A9DA2B" fill-opacity="0.1" stroke="#A9DA2B" stroke-width="1.2"/><rect x="122" y="28" width="36" height="30" rx="5" fill="#A9DA2B" fill-opacity="0.1" stroke="#A9DA2B" stroke-width="1.2"/>
+        <line x1="34" y1="70" x2="158" y2="70" stroke="#A9DA2B" stroke-width="1" stroke-opacity="0.3"/>
+        <path d="M40 92 h16 m-16 8 h30 m-30 8 h22" stroke="#D7EF3B" stroke-width="3" stroke-linecap="round"/>
+        <path d="M150 84 l6 6 -6 6 M158 84 l6 6 -6 6" stroke="#A9DA2B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg></div><div class="port-body"><h3>Content Strategy</h3><p>Content calendars and messaging built around your audience.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <rect x="20" y="14" width="160" height="102" rx="10" fill="#15171B" stroke="#A9DA2B" stroke-width="1.5"/><rect x="20" y="14" width="160" height="22" rx="10" fill="#1B1E23"/>
+        <circle cx="34" cy="25" r="3" fill="#D7EF3B"/><circle cx="44" cy="25" r="3" fill="#A9DA2B" fill-opacity="0.6"/><circle cx="54" cy="25" r="3" fill="#A9DA2B" fill-opacity="0.3"/>
+        <rect x="32" y="46" width="80" height="10" rx="3" fill="#D7EF3B"/><rect x="32" y="62" width="120" height="6" rx="3" fill="#A9DA2B" fill-opacity="0.4"/><rect x="32" y="74" width="96" height="6" rx="3" fill="#A9DA2B" fill-opacity="0.25"/>
+        <rect x="32" y="92" width="46" height="16" rx="5" fill="#D7EF3B" fill-opacity="0.15" stroke="#D7EF3B" stroke-width="1.5"/><rect x="122" y="46" width="36" height="62" rx="6" fill="#A9DA2B" fill-opacity="0.1" stroke="#A9DA2B" stroke-width="1"/>
+      </svg></div><div class="port-body"><h3>Website Creation</h3><p>Clean, conversion-ready websites built for small businesses.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <circle cx="100" cy="65" r="34" fill="#15171B" stroke="#D7EF3B" stroke-width="3"/><circle cx="100" cy="65" r="12" fill="none" stroke="#A9DA2B" stroke-width="2.5"/>
+        <g stroke="#D7EF3B" stroke-width="4" stroke-linecap="round"><line x1="100" y1="21" x2="100" y2="32"/><line x1="100" y1="98" x2="100" y2="109"/><line x1="56" y1="65" x2="67" y2="65"/><line x1="133" y1="65" x2="144" y2="65"/><line x1="69" y1="34" x2="76" y2="41"/><line x1="124" y1="89" x2="131" y2="96"/><line x1="131" y1="34" x2="124" y2="41"/><line x1="76" y1="89" x2="69" y2="96"/></g>
+        <path d="M92 60 l6 10 12 -18" stroke="#A9DA2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg></div><div class="port-body"><h3>WordPress Development</h3><p>Custom WordPress builds, themes and ongoing site updates.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <path d="M100 18c-20 0-36 16-36 36 0 27 36 62 36 62s36-35 36-62c0-20-16-36-36-36Z" fill="#15171B" stroke="#D7EF3B" stroke-width="3" stroke-linejoin="round"/><circle cx="100" cy="54" r="15" fill="#D7EF3B" fill-opacity="0.9"/>
+        <ellipse cx="100" cy="118" rx="34" ry="6" fill="#A9DA2B" fill-opacity="0.2"/>
+        <rect x="26" y="86" width="30" height="24" rx="5" fill="#15171B" stroke="#A9DA2B" stroke-width="1.5"/><path d="M26 96 h30 M36 86 v10 M46 86 v10" stroke="#A9DA2B" stroke-width="1.5"/>
+        <rect x="146" y="86" width="30" height="24" rx="5" fill="#15171B" stroke="#A9DA2B" stroke-width="1.5"/><path d="M146 96 h30 M156 86 v10 M166 86 v10" stroke="#A9DA2B" stroke-width="1.5"/>
+      </svg></div><div class="port-body"><h3>Local SEO</h3><p>Google Business Profile and local search optimization.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <circle cx="42" cy="65" r="16" fill="#15171B" stroke="#D7EF3B" stroke-width="2.5"/><circle cx="100" cy="32" r="13" fill="#15171B" stroke="#A9DA2B" stroke-width="2.5"/><circle cx="100" cy="98" r="13" fill="#15171B" stroke="#A9DA2B" stroke-width="2.5"/><circle cx="158" cy="65" r="16" fill="#15171B" stroke="#D7EF3B" stroke-width="2.5"/>
+        <line x1="56" y1="65" x2="88" y2="42" stroke="#A9DA2B" stroke-width="2" stroke-opacity="0.6"/><line x1="56" y1="65" x2="88" y2="88" stroke="#A9DA2B" stroke-width="2" stroke-opacity="0.6"/><line x1="112" y1="38" x2="144" y2="58" stroke="#A9DA2B" stroke-width="2" stroke-opacity="0.6"/><line x1="112" y1="92" x2="144" y2="72" stroke="#A9DA2B" stroke-width="2" stroke-opacity="0.6"/>
+        <circle cx="42" cy="65" r="6" fill="#D7EF3B"/><circle cx="158" cy="65" r="6" fill="#D7EF3B"/><circle cx="100" cy="32" r="4" fill="#A9DA2B"/><circle cx="100" cy="98" r="4" fill="#A9DA2B"/>
+      </svg></div><div class="port-body"><h3>Digital Marketing Strategy</h3><p>Full-funnel plans that tie channels to real business goals.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="head" data-reveal><span class="eyebrow">PORTFOLIO</span><h2>Selected work</h2><p>A sample of the kind of projects I take on — add your own screenshots, links and results here.</p></div>
+    <div class="grid3" data-reveal="stagger">
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <rect x="118" y="14" width="56" height="102" rx="12" fill="#15171B" stroke="#A9DA2B" stroke-width="2"/>
+        <rect x="124" y="24" width="44" height="74" rx="4" fill="#D7EF3B" fill-opacity="0.08"/>
+        <circle cx="146" cy="107" r="3" fill="#A9DA2B"/>
+        <path d="M137 52c0-4 3-7 7-7 2 0 4 1 5 3 1-2 3-3 5-3 4 0 7 3 7 7 0 6-8 12-12 15-4-3-12-9-12-15Z" fill="#D7EF3B"/>
+        <g stroke="#A9DA2B" stroke-width="3" stroke-linecap="round"><line x1="130" y1="88" x2="130" y2="94"/><line x1="138" y1="82" x2="138" y2="94"/><line x1="146" y1="76" x2="146" y2="94"/><line x1="154" y1="70" x2="154" y2="94"/></g>
+        <circle cx="42" cy="46" r="24" fill="#D7EF3B" fill-opacity="0.06"/>
+        <circle cx="42" cy="46" r="15" fill="none" stroke="#A9DA2B" stroke-width="2"/>
+        <path d="M34 46c0-4.5 3.5-8 8-8s8 3.5 8 8-3.5 8-8 8" fill="none" stroke="#D7EF3B" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="68" cy="92" r="4" fill="#D7EF3B"/>
+        <circle cx="82" cy="70" r="2.5" fill="#A9DA2B"/>
+      </svg></div><div class="port-body"><span class="tag">Social Media</span><h3>Social Media Growth Campaign</h3><p>Content planning and page management to build engagement for a local business.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <circle cx="94" cy="66" r="42" stroke="#A9DA2B" stroke-width="2" stroke-opacity="0.35"/>
+        <circle cx="94" cy="66" r="29" stroke="#A9DA2B" stroke-width="2" stroke-opacity="0.6"/>
+        <circle cx="94" cy="66" r="16" stroke="#D7EF3B" stroke-width="2"/>
+        <circle cx="94" cy="66" r="5" fill="#D7EF3B"/>
+        <path d="M128 96 L152 118 L139 119 L135 132 Z" fill="#D7EF3B"/>
+        <rect x="24" y="18" width="50" height="32" rx="6" fill="#15171B" stroke="#A9DA2B" stroke-width="1.5"/>
+        <line x1="32" y1="28" x2="66" y2="28" stroke="#D7EF3B" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.7"/>
+        <line x1="32" y1="36" x2="54" y2="36" stroke="#A9DA2B" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.5"/>
+        <line x1="32" y1="44" x2="60" y2="44" stroke="#A9DA2B" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.3"/>
+      </svg></div><div class="port-body"><span class="tag">Meta Ads</span><h3>Meta Ads Campaign</h3><p>Facebook &amp; Instagram ad campaign set up and optimized for leads.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <rect x="24" y="80" width="14" height="30" rx="2" fill="#A9DA2B" fill-opacity="0.35"/>
+        <rect x="44" y="64" width="14" height="46" rx="2" fill="#A9DA2B" fill-opacity="0.55"/>
+        <rect x="64" y="46" width="14" height="64" rx="2" fill="#A9DA2B" fill-opacity="0.75"/>
+        <rect x="84" y="30" width="14" height="80" rx="2" fill="#D7EF3B"/>
+        <path d="M84 30 l10 -14 m0 0 l10 4 m-10 -4 l4 12" stroke="#D7EF3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="140" cy="56" r="22" fill="#15171B" stroke="#D7EF3B" stroke-width="3"/>
+        <line x1="156" y1="72" x2="172" y2="88" stroke="#D7EF3B" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="140" cy="56" r="22" fill="none" stroke="#A9DA2B" stroke-width="1" stroke-opacity="0.4"/>
+      </svg></div><div class="port-body"><span class="tag">SEO</span><h3>SEO Project</h3><p>On-page and technical SEO improvements to grow organic traffic.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <rect x="20" y="14" width="160" height="102" rx="10" fill="#15171B" stroke="#A9DA2B" stroke-width="1.5"/>
+        <rect x="20" y="14" width="160" height="22" rx="10" fill="#1B1E23"/>
+        <circle cx="34" cy="25" r="3" fill="#D7EF3B"/>
+        <circle cx="44" cy="25" r="3" fill="#A9DA2B" fill-opacity="0.6"/>
+        <circle cx="54" cy="25" r="3" fill="#A9DA2B" fill-opacity="0.3"/>
+        <rect x="32" y="46" width="80" height="10" rx="3" fill="#D7EF3B"/>
+        <rect x="32" y="62" width="120" height="6" rx="3" fill="#A9DA2B" fill-opacity="0.4"/>
+        <rect x="32" y="74" width="96" height="6" rx="3" fill="#A9DA2B" fill-opacity="0.25"/>
+        <rect x="32" y="92" width="46" height="16" rx="5" fill="#D7EF3B" fill-opacity="0.15" stroke="#D7EF3B" stroke-width="1.5"/>
+        <rect x="122" y="46" width="36" height="62" rx="6" fill="#A9DA2B" fill-opacity="0.1" stroke="#A9DA2B" stroke-width="1"/>
+      </svg></div><div class="port-body"><span class="tag">Website</span><h3>Website Project</h3><p>A conversion-focused website built and launched on WordPress.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <path d="M50 20 H150 L110 70 V100 L90 110 V70 Z" fill="#15171B" stroke="#A9DA2B" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="70" cy="12" r="5" fill="#D7EF3B"/>
+        <circle cx="95" cy="8" r="4" fill="#A9DA2B" fill-opacity="0.7"/>
+        <circle cx="120" cy="12" r="5" fill="#A9DA2B" fill-opacity="0.5"/>
+        <circle cx="135" cy="8" r="3.5" fill="#D7EF3B" fill-opacity="0.6"/>
+        <rect x="80" y="112" width="40" height="14" rx="5" fill="#D7EF3B"/>
+        <path d="M91 119 l4 4 8 -8" stroke="#15170A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg></div><div class="port-body"><span class="tag">Lead Gen</span><h3>Lead-Generation Campaign</h3><p>A landing page + ads campaign built to capture qualified leads.</p></div></div>
+      <div class="port-card"><div class="port-thumb"><svg viewBox="0 0 200 130" fill="none">
+        <rect x="46" y="26" width="70" height="94" rx="8" fill="#15171B" stroke="#A9DA2B" stroke-width="1.5" transform="rotate(-6 81 73)"/>
+        <rect x="80" y="18" width="70" height="94" rx="8" fill="#1B1E23" stroke="#D7EF3B" stroke-width="1.5" transform="rotate(5 115 65)"/>
+        <circle cx="103" cy="46" r="10" fill="#D7EF3B" fill-opacity="0.8" transform="rotate(5 115 65)"/>
+        <rect x="92" y="66" width="46" height="6" rx="3" fill="#A9DA2B" fill-opacity="0.5" transform="rotate(5 115 65)"/>
+        <rect x="92" y="78" width="34" height="6" rx="3" fill="#A9DA2B" fill-opacity="0.3" transform="rotate(5 115 65)"/>
+        <path d="M150 24 q10 8 4 18" stroke="#D7EF3B" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <circle cx="158" cy="18" r="4" fill="#D7EF3B"/>
+      </svg></div><div class="port-body"><span class="tag">Creative</span><h3>Poster &amp; Creative Design</h3><p>Social and campaign creatives designed in Canva Pro.</p></div></div>
+    </div>
+    <p class="port-note">Client industries worked with: local services, retail &amp; small business — update with your actual clients.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="head" data-reveal><span class="eyebrow">EXPERIENCE</span><h2>Work timeline</h2></div>
+    <div class="timeline" data-reveal>
+      <div class="tl">
+        <div class="tl-dotcol"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div class="tl-card">
+          <div class="tl-top"><h3>Digital Marketing Executive — Enovexa Solutions</h3><span class="when">Current</span></div>
+          <div class="tl-role">Full-time</div>
+          <ul>
+            <li>Planning and running digital marketing campaigns across SEO, social and paid channels.</li>
+            <li>Managing client accounts end to end, from strategy to reporting.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl">
+        <div class="tl-dotcol"><div class="tl-dot"></div></div>
+        <div class="tl-card">
+          <div class="tl-top"><h3>Digital Marketing Intern — Dotcom Creativez, Kochi</h3><span class="when">2025</span></div>
+          <div class="tl-role">Internship</div>
+          <ul>
+            <li>Executed real-time projects across SEO, social media marketing and performance marketing.</li>
+            <li>Managed social media pages and planned ad campaigns to increase engagement.</li>
+            <li>Performed keyword research and content creation across digital platforms.</li>
+            <li>Monitored and improved campaign results using Google Analytics and AI tools.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="head" data-reveal><span class="eyebrow">SKILLS</span><h2>Organized by area</h2></div>
+    <div class="grid3" data-reveal="stagger">
+      <div class="skill-group"><h3>DIGITAL MARKETING</h3><ul><li>SEO</li><li>SMM</li><li>Meta Ads</li><li>Google Ads</li><li>Keyword Research</li><li>Google Analytics</li><li>Content Marketing</li></ul></div>
+      <div class="skill-group"><h3>WEBSITE</h3><ul><li>WordPress</li><li>Basic Website Creation</li><li>On-page SEO</li><li>Technical SEO Basics</li><li>Landing Pages</li></ul></div>
+      <div class="skill-group"><h3>DESIGN &amp; TOOLS</h3><ul><li>Canva Pro</li><li>Google Analytics</li><li>Google Search Console</li><li>AI Tools</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="freelance">
+  <div class="wrap">
+    <div class="free-banner" data-reveal>
+      <span class="eyebrow">FREELANCE</span>
+      <h2>Need More Visibility for Your Business?</h2>
+      <p>I help businesses build their online presence through SEO, social media marketing, paid advertising and professional websites.</p>
+      <div class="hero-actions" style="margin-top:26px;">
+        <a class="btn primary" href="#contact">Get a Free Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="head" data-reveal><span class="eyebrow">CONTACT</span><h2>Let's talk about your project</h2></div>
+    <div class="request-card" data-reveal>
+      <div class="request-left">
+        <div class="req-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
+        </div>
+        <h2>Contact Now</h2>
+        <p>Tell me a bit about your business and what you need — I'll get back to you within a day.</p>
+        <div class="req-quick">
+          <a class="social" href="https://wa.me/918590717718" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Z"/></svg></a>
+          <a class="social" href="mailto:harikrishnapk.digital@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg></a>
+          <a class="social" href="https://www.linkedin.com/in/harikrishna-pk" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9Z"/></svg></a>
+        </div>
+        <div class="req-glow"></div>
+      </div>
+      <div class="request-right">
+        <form id="contact-form">
+          <input type="hidden" name="access_key" value="6ad28e34-c7fa-45d2-982a-457d81400dcc">
+          <input type="hidden" name="subject" value="New portfolio contact request">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="field"><label>Your full name</label><input type="text" name="name" placeholder="John Smith" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="name@yourcompany.com" required></div>
+          <div class="field"><label>Phone number</label><input type="tel" name="phone" placeholder="+1"></div>
+          <div class="field"><label>Details</label><textarea name="message" placeholder="Provide us with further details" required></textarea></div>
+          <button type="submit" class="req-submit">Contact Now</button>
+          <p id="form-status" style="font-size:13.5px; margin-top:10px; min-height:18px;"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fname">Hari Krishna P K</div>
+    <div class="fmeta">© 2026 · Digital Marketing Executive &amp; Freelance Digital Marketer · Kochi, Kerala</div>
+    <div class="foot-socials">
+      <a class="social" href="https://www.linkedin.com/in/harikrishna-pk" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9Z"/></svg></a>
+      <a class="social" href="https://www.instagram.com/ha6iiiiiiiiii/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a class="social" href="https://www.facebook.com/share/1FAphHNuJn/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg></a>
+      <a class="social" href="https://wa.me/918590717718" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var bar = document.getElementById('progress');
+    function onScroll(){
+      var h = document.documentElement;
+      var pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+      if(bar) bar.style.width = pct + '%';
+    }
+    document.addEventListener('scroll', onScroll, { passive:true });
+    onScroll();
+  })();
+  (function(){
+    var els = document.querySelectorAll('[data-reveal]');
+    if(!('IntersectionObserver' in window)){ els.forEach(function(el){ el.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+  (function(){
+    var form = document.getElementById('contact-form');
+    var status = document.getElementById('form-status');
+    if(!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var btn = form.querySelector('.req-submit');
+      var key = form.access_key.value;
+      if(!key || key === 'YOUR-WEB3FORMS-ACCESS-KEY'){
+        status.style.color = '#ff8080';
+        status.textContent = 'Form not connected yet — add a free Web3Forms access key to enable sending.';
+        return;
+      }
+      btn.disabled = true; var original = btn.textContent; btn.textContent = 'Sending…';
+      status.style.color = 'var(--dim)'; status.textContent = '';
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      }).then(function(res){ return res.json(); }).then(function(data){
+        if(data.success){
+          status.style.color = 'var(--cyan-2)';
+          status.textContent = "Thanks — your message is sent. I'll reply within a day.";
+          form.reset();
+        } else {
+          status.style.color = '#ff8080';
+          status.textContent = 'Something went wrong. Please email me directly instead.';
+        }
+      }).catch(function(){
+        status.style.color = '#ff8080';
+        status.textContent = 'Something went wrong. Please email me directly instead.';
+      }).finally(function(){
+        btn.disabled = false; btn.textContent = original;
+      });
+    });
+  })();
+</script>
+</body>
+</html>
